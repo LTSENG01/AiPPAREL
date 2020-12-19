@@ -3,7 +3,7 @@ const { spawn } = require('child_process');
 
 const router = express.Router();
 
-/* GET stylize listing. */
+/* POST stylize listing. */
 router.post('/', function(req, res, next) {
   // grab image link from request body
       // do we include raw images as well?

@@ -5,6 +5,7 @@ const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
 const stylizeRouter = require('./routes/stylize');
+const designRouter = require('./routes/design');
 
 const app = express();
 
@@ -16,5 +17,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/stylize', stylizeRouter);
+app.use('/design/:hash', designRouter);
 
 module.exports = app;
