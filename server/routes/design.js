@@ -22,7 +22,7 @@ router.get("/", function (req, res, next) {
   }
 
   // read the JSON file synchronously from filesystem (migrate to DB later)
-  const path = `./status/${hash}.json`;
+  const path = `./server/status/${hash}.json`;
   console.log(path + " " + fs.existsSync(path));
   if (fs.existsSync(path)) {
     let jsonContents = fs.readFileSync(path);

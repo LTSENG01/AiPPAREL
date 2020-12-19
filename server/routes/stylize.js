@@ -20,18 +20,20 @@ function writeProgress(progress) {
 /* POST stylize listing. */
 router.post("/", function (req, res, next) {
   let id = nanoid();
+
   // id: String, contentImage: String, styleImages: String[]
-  let imageData = { id: id, contentImage: "", styleImages: [] };
   let progress = { status: IN_PROGRESS, id: id };
   try {
     // if no files attached, return error/failed
     if (!req.files) {
+      console.log(files);
       res.send({
         status: false,
         message: "no images included",
       });
     } else {
       let data = [];
+
       req.files.images.forEach((photo) => {
         let imgFilename = nanoid() + path.extname(photo.name);
         photo.mv("./server/uploads/" + imgFilename);
@@ -44,7 +46,6 @@ router.post("/", function (req, res, next) {
       });
 
       writeProgress(progress);
-      console.log(1);
       // runScript(data[0].path, data[1].path);
       res.send({
         status: true,

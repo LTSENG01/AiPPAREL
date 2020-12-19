@@ -14,7 +14,6 @@ router.get("/", function (req, res) {
       return false;
     }
   });
-
   if (req.query.hash && fileExists) {
     res.sendFile(
       path.resolve(__dirname + "/../result/" + req.query.hash + ext)
