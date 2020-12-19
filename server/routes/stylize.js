@@ -76,6 +76,10 @@ router.post("/", function (req, res, next) {
             "--logtostdout"
         ]);
 
+        stylePyScript.stdout.on("data", data => {
+            console.log(data);
+        });
+
         stylePyScript.stderr.on("data", (err) => {
             progress.status = ERROR;
             progress["message"] = "Failed to load image";
