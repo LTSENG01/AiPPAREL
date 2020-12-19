@@ -15,7 +15,10 @@ router.get('/', function(req, res, next) {
         hash = req.params["hash"]
 
         // regex the hash, toss if fails!
-        console.log(hash)
+        let regex = /^[A-Za-z0-9_-]{21}$/
+        if (!regex.test(hash)) {
+            return res.status(400).send("Invalid hash.")
+        }
     } else {
         return res.status(404).send("Error. Design not found!")
     }
