@@ -6,7 +6,6 @@ const shortid = require('shortid')
 const router = express.Router();
 const {IN_PROGRESS, ERROR, SUCCESS} = require('../../enums/status.js');
 
-
 function writeProgress(progress) {
   
   fs.writeFileSync(`./status/${progress.id}.json`, JSON.stringify(progress));
@@ -15,7 +14,6 @@ function writeProgress(progress) {
 /* POST stylize listing. */
 router.post('/', function(req, res, next) {
   let id = shortid.generate();
-
     // id: String, contentImage: String, styleImages: String[]
   let imageData = {id: id, contentImage: "", styleImages: []};
   let progress = { status: IN_PROGRESS, id: id };
@@ -46,6 +44,9 @@ router.post('/', function(req, res, next) {
       res.status(500).send(err);
   }
   // const stylePyScript = spawn("python3 ../python/stylize.py", ["originalImage", "styleImage"])
+
+  // run the python script
+  // const stylePyScript = spawn("python3", ["../python/stylize.py", "originalImage", "styleImage"])
 
   // stylePyScript.stdout.on('data', data => {
   //   progress.status = ERROR;
