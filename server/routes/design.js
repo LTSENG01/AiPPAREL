@@ -8,27 +8,8 @@ const { IN_PROGRESS, ERROR, SUCCESS } = require("../../enums/status.js");
  */
 router.get("/", function (req, res, next) {
   // get the hash from the URL
-  if (req.params && "hash" in req.params) {
-    const hash = req.params["hash"];
-    console.log(hash);
-  } else {
-    res.status(404).send("Error. Design not found!");
-  }
-
-  // read the JSON file synchronously from filesystem
-
-  // parse the JSON file
-
-  // send back a response
-
-  res.send(req.params);
-});
-
-// todo CAN YOU HAVE A GET AND POST?
-router.post("/", function (req, res, next) {
-  // get the hash from the URL
   let hash;
-  if (typeof req.params == "object" && "hash" in req.params) {
+  if (typeof req.params === "object" && "hash" in req.params) {
     hash = req.params["hash"];
 
     // regex the hash, toss if fails!
