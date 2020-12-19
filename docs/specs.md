@@ -7,3 +7,4 @@ APPeral generator will let the user either upload or select two images, one as t
 * John
 * Kelsey
 * Martin
+* Lary
