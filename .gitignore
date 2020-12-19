@@ -1,5 +1,6 @@
 *.swp
 .idea/
 node_modules/
-uploads/*
+*/uploads/*
 */status/*
+
