@@ -17,7 +17,7 @@ router.post('/', function(req, res, next) {
   let id = shortid.generate();
 
     // id: String, contentImage: String, styleImages: String[]
-  let images = {id: id, contentImage: "", styleImages: []};
+  let imageData = {id: id, contentImage: "", styleImages: []};
   let progress = { status: IN_PROGRESS, id: id };
   try {
     // if no files attached, return error/failed
@@ -28,7 +28,7 @@ router.post('/', function(req, res, next) {
           });
       } else {
           let data = [];
-          req.files.photos.forEach((photo) => {
+          req.files.images.forEach((photo) => {
               photo.mv('./uploads/' + photo.name);
               data.push({name: photo.name, mimetype: photo.mimetype, size: photo.size, path: "./uploads/" + photo.name})
           })
@@ -42,6 +42,7 @@ router.post('/', function(req, res, next) {
           });
       }
   } catch (err) {
+    console.log(err)
       res.status(500).send(err);
   }
   // const stylePyScript = spawn("python3 ../python/stylize.py", ["originalImage", "styleImage"])
