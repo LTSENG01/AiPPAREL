@@ -2,13 +2,16 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-
+const fileUpload = require('express-fileupload');
 const indexRouter = require('./routes/index');
 const stylizeRouter = require('./routes/stylize');
 const designRouter = require('./routes/design');
 
 const app = express();
 
+app.use(fileUpload({
+    createParentPath: true
+}));
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
