@@ -13,7 +13,7 @@ router.post('/', function(req, res, next) {
   // store in a local directory
 
   // run the python script
-  const stylePyScript = spawn("python3 ../python/stylize.py", ["originalImage", "styleImage"])
+  const stylePyScript = spawn("python3", ["../python/stylize.py", "originalImage", "styleImage"])
 
   stylePyScript.stdout.on('data', data => {
     // do something
