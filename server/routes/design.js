@@ -28,7 +28,7 @@ router.get("/", function (req, res, next) {
 
 // todo CAN YOU HAVE A GET AND POST?
 router.post("/", function (req, res, next) {});
-=======
+
     // get the hash from the URL
     let hash
     if (typeof req.params == "object" && "hash" in req.params) {
