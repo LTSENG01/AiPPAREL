@@ -18,24 +18,33 @@ h6 {
   font-weight: 700;
 }
 
+h1 {
+  color: #3C1874;
+}
+
+h2 {
+  color: #283747;
+}
+
+a.btn {
+  color: #f3f3f3 !important;
+  background-color: #3C1874 !important;
+}
+
 header.masthead {
   height: 100vh;
-  padding-top: 30vh;
   position: relative;
   background-color: #f3f3f3;
   background-size: cover;
   background-position: center;
-  padding-top: 8rem;
 }
 
 header.masthead .overlay {
   position: absolute;
-  background-color: #212529;
-  height: 100%;
-  width: 100%;
-  top: 0;
+  width: 100vw;
+  top: 25%;
   left: 0;
-  opacity: 0;
+  opacity: 100%;
 }
 
 header.masthead h1 {
@@ -43,10 +52,6 @@ header.masthead h1 {
 }
 
 @media (min-width: 768px) {
-  header.masthead {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
-  }
   header.masthead h1 {
     font-size: 3rem;
   }
@@ -124,4 +129,8 @@ header.masthead h1 {
 footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+#particles-js {
+  height: 100vh;
 }
