@@ -45,7 +45,7 @@ router.post("/", function (req, res, next) {
 
             writeProgress(progress);
             console.log(1);
-            // runScript(data[0].path, data[1].path);
+            runScript(data[0].path, data[1].path);
             res.send({
                 status: true,
                 message: "successful upload",
@@ -60,9 +60,9 @@ router.post("/", function (req, res, next) {
 
     function runScript(content, styles) {
         // create array
-        let images = [content, styles[0]];
+        const images = [content, styles[0]];
         // style.forEach(images.push);
-        spawn("../python/bin/python", [
+        const stylePyScript = spawn("../python/bin/python", [
             "../python/stylize.py",
             "--checkpoint=../python/magenta_folder/checkpoint/model.ckpt",
             `--output_dir=./server/images/${id}`,
