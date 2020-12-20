@@ -99,26 +99,6 @@ router.post("/", function (req, res, next) {
       }
     );
 
-    function runScript(content, styles) {
-        // create array
-        const images = [content, styles];
-        // style.forEach(images.push);
-        const stylePyScript = spawn("python/venv/bin/python", [
-            "python/stylize.py",
-            "--checkpoint=python/magenta_folder/checkpoint/model.ckpt",
-            `--output_dir=server/images/${id}`,
-            `--style_images_paths=${images[0]}`,
-            `--content_images_paths=${images[1]}`,
-            "--image_size=512",
-            "--content_square_crop=False",
-            "--style_image_size=512",
-            "--style_square_crop=False",
-            "--interpolation_weights=[0.0,0.2,0.4,0.6,0.8,1.0]",
-            "--logtostdout"
-        ], {
-            cwd: "/srv/hackumass"
-        });
-
         stylePyScript.stdout.on("data", data => {
             console.log(data.toString());
         });
