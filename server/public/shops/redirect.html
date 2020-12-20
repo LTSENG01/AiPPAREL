@@ -1,55 +1,115 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.79.0">
-    <title>Album example · Bootstrap v5.0</title>
+    <meta name="author" content="">
 
+    <title>AiPPAREL | Almost there!</title>
+
+    <!-- Custom fonts for this template -->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="../vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+          type="text/css">
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
+
     <link href="../css/landing-page.css" rel="stylesheet">
 
     <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
+        .section {
+            margin-top: 2rem;
+            margin-bottom: 3rem;
         }
 
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
+        .container-fluid {
+            text-align: center;
         }
 
-        .overlay {
-          position: absolute;
-          width: 100vw;
-          top: 10%;
-          opacity: 100%;
-        }
-
-        .album, .container {
-          background-color: transparent;
+        #message {
+            margin-top: 50vh;
         }
     </style>
 
 
 </head>
 <body>
-<main>
-    <div id="particles-js"></div>
-    <script src="../particles.js"></script>
 
-</main>
+<div class="container-fluid">
+
+    <div class="container section">
+        <a href="../index.html" class="navbar-brand d-flex align-items-center">
+            <strong style="color: #3C1874; font-size: 1.5rem;"><span style="color: #932432;">Ai</span>PPAREL</strong>
+        </a>
     </div>
-</body>
+
+    <div class="section">
+        <h1>Please sit tight!</h1>
+        <h4>We're using state-of-the-art machine learning techniques to develop your image.</h4>
+    </div>
+
+    <div class="section" id="message">
+        <p>Processing should be finished within 3 minutes. If this does not happen, please contact us!</p>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+                <ul class="list-inline mb-2">
+                    <li class="list-inline-item">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="list-inline-item">&sdot;</li>
+                    <li class="list-inline-item">
+                        <a href="#">Contact</a>
+                    </li>
+                    <li class="list-inline-item">&sdot;</li>
+                    <li class="list-inline-item">
+                        <a href="#">Terms of Use</a>
+                    </li>
+                    <li class="list-inline-item">&sdot;</li>
+                    <li class="list-inline-item">
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+                <p class="text-muted small mb-4 mb-lg-0">&copy; AiPPAREL 2020. All Rights Reserved.</p>
+            </div>
+            <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item mr-3">
+                        <a href="#">
+                            <i class="fab fa-facebook fa-2x fa-fw"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mr-3">
+                        <a href="#">
+                            <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <i class="fab fa-instagram fa-2x fa-fw"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/two.js/0.7.0/two.min.js"></script>
+<script src="neural-net.js"></script>
 <script src="../main.js"></script>
+
+</body>
+
+
 
 </html>
