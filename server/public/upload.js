@@ -4,6 +4,7 @@ function initialize() {
 
     // Document selectors
     const submitButton = document.getElementById("submit-button");
+    const photoSelectors = document.querySelectorAll('input[type="file"]');
 
     const contentInput = document.getElementById("content-img-upload")
     const contentPreview = document.getElementById("content-preview")
@@ -35,11 +36,10 @@ function initialize() {
     // On submit
     submitButton.addEventListener("click", () => {
         const formData = new FormData();
-        const photos = document.querySelectorAll('input[type="file"]');
 
-        for (let i = 0; i < photos.files.length; ++i) {
-            formData.append('images', photos.files[i])
-        }
+        photoSelectors.forEach(selector => {
+            formData.append('images', selector.files[0])
+        })
 
         // POST the /stylize endpoint
         fetch('/stylize', {
