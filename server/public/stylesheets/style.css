@@ -2,7 +2,7 @@ body {
   overflow-x: hidden !important;
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-  background-image: url("../img/upload_background.png");
+  background-image: url("../img/upload_background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -55,11 +55,16 @@ img {
 }
 
 .section {
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
+}
+
+.fab {
+  color: #932432 !important;
 }
 
 #submit-button {
   background-color: #932432;
   color: #fff;
 }
+

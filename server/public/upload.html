@@ -32,47 +32,40 @@
       type="text/css"
     />
 
-    <link href="css/landing-page.css" rel="stylesheet" />
-    <link href="stylesheets/style.css" rel="stylesheet" />
-  </head>
-  <body>
+    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="stylesheets/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
     <div class="container">
-      <div class="section">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <strong style="color: #3C1874; font-size: 1.5rem;"><span style="color: #932432;">Ai</span>PPAREL</strong>
+        </a>
+    </div>
+
+    <div class="section">
+
         <h1>Upload your Images</h1>
       </div>
       <div class="section">
         <div class="row">
-          <div class="col-sm-6">
-            <h2>Content Image</h2>
-            <div class="mb-3 pre-upload">
-              <label for="content-img-upload" class="form-label"
-                >The content image...</label
-              >
-              <input
-                class="form-control"
-                type="file"
-                id="content-img-upload"
-                accept="image/jpeg"
-              />
+            <div class="col-sm-6">
+                <h2>Content Image</h2>
+                <div class="mb-3 pre-upload">
+                    <label for="content-img-upload" class="form-label">The content image is the main image and most of its features will be visible at the end.</label>
+                    <input class="form-control" type="file" id="content-img-upload" accept="image/jpeg">
+                </div>
+                <img src="./img/missing_image.png" alt="Content Image Preview" id="content-preview">
             </div>
-            <img
-              src="./img/missing_image.png"
-              alt="Content Image Preview"
-              id="content-preview"
-            />
-          </div>
-          <div class="col-sm-6">
-            <h2>Style Image</h2>
-            <div class="mb-3 pre-upload">
-              <label for="style-img-upload" class="form-label"
-                >The style image...</label
-              >
-              <input
-                class="form-control"
-                type="file"
-                id="style-img-upload"
-                accept="image/jpeg"
-              />
+            <div class="col-sm-6">
+                <h2>Style Image</h2>
+                <div class="mb-3 pre-upload">
+                    <label for="style-img-upload" class="form-label">The style image is the artistic style you want the content image to be "painted" in.</label>
+                    <input class="form-control" type="file" id="style-img-upload" accept="image/jpeg">
+                </div>
+                <img src="./img/missing_image.png" alt="Style Image Preview" id="style-preview">
+
             </div>
             <img
               src="./img/missing_image.png"
