@@ -88,6 +88,7 @@ async function getTask(task_key, id) {
           ];
           saveImages(mockups, id);
           clearInterval(loop);
+	  fs.writeFileSync("./server/status/" + thash + ".json", JSON.stringify({status: 2}));	
           return mockups;
         }
         counter++;

@@ -16,7 +16,9 @@
     "lodash": "^4.17.20",
     "morgan": "~1.9.1",
     "nanoid": "^3.1.20",
+    "node-fetch": "^2.6.1",
     "nodemon": "^2.0.6",
-    "particles.js": "^2.0.0"
+    "particles.js": "^2.0.0",
+    "request": "^2.88.2"
   }
 }
