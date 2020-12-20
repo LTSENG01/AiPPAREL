@@ -4,8 +4,8 @@ setInterval(() => {
     // Check if the internal processing is complete
     let hash = getCookie("hash")
     fetch(`/design/${hash}`)
-        .then(response => console.log(response.text()))
         .then(response => {
+            console.log(response.text())
             switch (response.status) {
                 case 200:
                     window.location.href = "/shop.html"
