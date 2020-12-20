@@ -1,9 +1,9 @@
 
 // This handler runs every seconds
-setInterval(() => {
+setInterval(async () => {
     // Check if the internal processing is complete
     let hash = getCookie("hash")
-    fetch(`/design/${hash}`)
+    await fetch(`/design/${hash}`)
         .then(response => {
             console.log(response.text())
             switch (response.status) {
