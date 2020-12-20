@@ -49,7 +49,7 @@ function initialize() {
             .then(result => {
                 console.log('Success:', result)
                 // Redirect to the processing page
-                window.location.href = "/redirect.html"
+                window.location.href = "/shops/redirect.html"
             })
             .catch(error => {
                 console.error('Error', error)
