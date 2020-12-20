@@ -27,7 +27,6 @@ async function getProduct(id, image, hash) {
       console.log("error" + error);
     });
   console.log(urls);
-  return urls;
 }
 
 /*
@@ -54,7 +53,6 @@ async function makeTask(id, image, prod) {
     .catch((error) => {
       console.log("error" + error);
     });
-  return out;
 }
 
 /*
@@ -93,7 +91,6 @@ async function getTask(task_key, id) {
         counter++;
       });
   }, 1000);
-  return mockups;
 }
 
 // constant which is just generic default settings
