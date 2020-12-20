@@ -8,7 +8,7 @@ setInterval(async () => {
             console.log(response.text())
             switch (response.status) {
                 case 200:
-                    window.location.href = "/shop.html"
+                    window.location.href = "/shops/shop.html"
                     return
                 case 202:
                     console.log("Still processing!")
