@@ -1,4 +1,5 @@
 initialize();
+
 function initialize() {
     console.log("test");
     const submit_button = document.getElementById("submit_button");
@@ -11,11 +12,11 @@ function initialize() {
             formData.append('images', photos.files[i])
         }
 
-        fetch('https://aipparel.online/stylize', {
+        fetch('/stylize', {
             method: 'POST',
             body: formData
         })
-            .then(resposne => response.json())
+            .then(response => response.json())
             .then(result => {
                 console.log('Success:', result);
             })
