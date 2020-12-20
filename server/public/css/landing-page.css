@@ -5,7 +5,6 @@
  */
 
 body {
-  overflow-x: hidden !important;
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -57,7 +56,6 @@ header.masthead h1 {
     font-size: 3rem;
   }
 }
-
 
 .showcase .showcase-text {
   padding: 3rem;
@@ -131,10 +129,6 @@ header.masthead h1 {
 footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-
-.fab {
-  color: #932432 !important;
 }
 
 #particles-js {
