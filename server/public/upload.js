@@ -8,7 +8,7 @@ function initialize() {
         const photos = document.querySelector('input[type="file"][multiple]');
 
         formData.append("images", "target_then_style");
-        for (let i = 0; i < photos.isDefaultNamespace.length; ++i) {
+        for (let i = 0; i < photos.files.length; ++i) {
             formData.append('images', photos.files[i])
         }
 
