@@ -10,7 +10,8 @@ router.get("/", function (req, res, next) {
   res.send(
     getProduct(
       itemNum,
-      `https://aipparel.online/result?hash=${hash}&num=3`.hash
+      `https://aipparel.online/result?hash=${hash}&num=3`,
+      hash
     )
   );
 });
