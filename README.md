@@ -1,5 +1,6 @@
 # AiPPAREL Created @ HackUMass
 Larry Tseng, Johno Pomerat, Martin Dickie, Kelsey Gregware
+
 We are AiPPAREL, a startup that sells clothing and accessories designed with artificial intelligence. We use neural style transfer to allow users to create unique and beautiful shirts, hoodies, phone cases, and more. Users can then buy their creations through our shopping portal.
 
 # What it does:
