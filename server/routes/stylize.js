@@ -6,6 +6,7 @@ const { nanoid } = require("nanoid");
 const router = express.Router();
 const { IN_PROGRESS, ERROR, SUCCESS } = require("../../enums/status.js");
 const path = require("path");
+const { getProduct } = require("./printfulapi.js");
 const validExtensions = [".jpg", ".JPG", ".png", ".PNG", ".jpeg", ".JPEG"];
 const imgsPath = "./server/images/";
 
@@ -114,6 +115,17 @@ router.post("/", function (req, res, next) {
         progress["message"] = "Failed to load image";
       }
       writeProgress(progress);
+
+      let reg = new RegExp(
+        "^[A-Za-z0-9_-]{21}_stylized_[A-Za-z0-9_-]{21}_3" + num + "{1}"
+      );
+      let itemnums = [1, 257, 260];
+      itemnums.forEach((num) => {
+        getProduct(
+          num,
+          `https://aipparel.online/result?hash=${progress.id}&num=3`
+        );
+      });
     });
   }
 });
