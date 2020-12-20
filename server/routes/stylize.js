@@ -21,65 +21,52 @@ function writeProgress(progress) {
 
 /* POST stylize listing. */
 router.post("/", function (req, res, next) {
-  let id = nanoid();
-  // id: String, contentImage: String, styleImages: String[]
-  let progress = { status: IN_PROGRESS, id: id };
-  try {
-    // if no files attached, return error/failed
-    if (!req.files) {
-      console.log(files);
-      res.send({
-        status: false,
-        message: "no images included",
-      });
-    } else {
-      let data = [];
+    let id = nanoid();
+    // id: String, contentImage: String, styleImages: String[]
+    let progress = {status: IN_PROGRESS, id: id};
+    try {
+        // if no files attached, return error/failed
+        if (!req.files) {
+            console.log(files);
+            res.send({
+                status: false,
+                message: "no images included",
+            });
+        } else {
+            let data = [];
 
-      if (!fs.existsSync(imgsPath)) {
-        fs.mkdirSync(imgsPath);
-      }
+            if (!fs.existsSync(imgsPath)) {
+                fs.mkdirSync(imgsPath);
+            }
 
-      if (!fs.existsSync(imgsPath + id)) {
-        fs.mkdirSync(imgsPath + id);
-      }
+            if (!fs.existsSync(imgsPath + id)) {
+                fs.mkdirSync(imgsPath + id);
+            }
 
-      req.files.images.forEach((photo) => {
-        let imgFilename = nanoid() + path.extname(photo.name);
-        photo.mv(imgsPath + id + "/" + imgFilename);
-        data.push({
-          name: imgFilename,
-          mimetype: photo.mimetype,
-          size: photo.size,
-          path: imgsPath + id + "/" + imgFilename,
-        });
-      });
+            req.files.images.forEach((photo) => {
+                let imgFilename = nanoid() + path.extname(photo.name);
+                photo.mv(imgsPath + id + "/" + imgFilename);
+                data.push({
+                    name: imgFilename,
+                    mimetype: photo.mimetype,
+                    size: photo.size,
+                    path: imgsPath + id + "/" + imgFilename,
+                });
+            });
 
-      writeProgress(progress);
-      // runScript(data[0].path, data[1].path);
-      res.send({
-        status: true,
-        message: "successful upload",
-        id: id,
-        data: data,
-      });
+            writeProgress(progress);
+            // runScript(data[0].path, data[1].path);
+            res.send({
+                status: true,
+                message: "successful upload",
+                id: id,
+                data: data,
+            });
+        }
+    } catch (err) {
+        console.log(err);
+        res.status(500).send(err);
     }
-  } catch (err) {
-    console.log(err);
-    res.status(500).send(err);
-  }
-
-  function runScript(content, styles) {
-    // create array
-    let images = [content, styles];
-    console.log(images);
-    // style.forEach(images.push);
-    spawn("python", [
-      "../python/stylize.py",
-      "--id",
-      `${id}`,
-      `${images[0]}`,
-      `${images[1]}`,
-    ]);
 
 
     function runScript(content, styles) {
@@ -99,7 +86,7 @@ router.post("/", function (req, res, next) {
             "--interpolation_weights=[0.0,0.2,0.4,0.6,0.8,1.0]",
             "--logtostdout"
         ], {
-          cwd: "/srv/hackumass"
+            cwd: "/srv/hackumass"
         });
 
         stylePyScript.stdout.on("data", data => {
