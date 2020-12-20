@@ -7,6 +7,7 @@ const indexRouter = require("./routes/index");
 const stylizeRouter = require("./routes/stylize");
 const designRouter = require("./routes/design");
 const retrieveImageRouter = require("./routes/retrieveImage");
+
 const app = express();
 
 app.use(
@@ -24,5 +25,4 @@ app.use("/", indexRouter);
 app.use("/stylize", stylizeRouter);
 app.use("/design/:hash", designRouter);
 app.use("/result", retrieveImageRouter);
-
 module.exports = app;

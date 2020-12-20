@@ -6,13 +6,6 @@
     <title>AiPPAREL | Upload</title>
 </head>
 <body>
-    <div class="container" id="image_container" enctype="multipart/form-data"> </div>/> 
-    <p>Upload your images.</p> 
-    <form action="/stylize" method="post">
-    <input  id="target_image" name="target_image" rules="required" type="file" accept="image/png, image/jpeg, image/jpg"/>'
-    <input  id="style_image" name="style_image" rules="required" type="file" accept="image/png, image/jpeg, image/jpg" />
-    <input type="submit" id="submit_button" value="Submit"
-    onclick="this.value='Uploading...'"/>
-</form>
+    <input type="file" multiple />
 </body>
 </html>
