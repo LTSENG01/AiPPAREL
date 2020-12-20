@@ -3,10 +3,12 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const fileUpload = require("express-fileupload");
+
 const indexRouter = require("./routes/index");
 const stylizeRouter = require("./routes/stylize");
 const designRouter = require("./routes/design");
 const retrieveImageRouter = require("./routes/retrieveImage");
+const shopRouter = require("./routes/shop");
 
 const app = express();
 
