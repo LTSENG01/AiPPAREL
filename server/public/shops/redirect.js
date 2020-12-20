@@ -24,7 +24,7 @@ setInterval(async () => {
         .catch(error => {
             alert("There was an error with this page! " + error)
         })
-}, 1000)
+}, 5000)
 
 // Grabs a cookie value (from w3schools.com)
 function getCookie(cname) {
