@@ -6,6 +6,8 @@ const { nanoid } = require("nanoid");
 const router = express.Router();
 const { IN_PROGRESS, ERROR, SUCCESS } = require("../../enums/status.js");
 const path = require("path");
+const validExtensions = [".jpg", ".JPG", ".png", ".PNG", ".jpeg", ".JPEG"];
+const imgsPath = "./server/images/";
 
 function writeProgress(progress) {
   if (!fs.existsSync("./server/status")) {
@@ -20,7 +22,6 @@ function writeProgress(progress) {
 /* POST stylize listing. */
 router.post("/", function (req, res, next) {
   let id = nanoid();
-
   // id: String, contentImage: String, styleImages: String[]
   let progress = { status: IN_PROGRESS, id: id };
   try {
@@ -34,14 +35,22 @@ router.post("/", function (req, res, next) {
     } else {
       let data = [];
 
+      if (!fs.existsSync(imgsPath)) {
+        fs.mkdirSync(imgsPath);
+      }
+
+      if (!fs.existsSync(imgsPath + id)) {
+        fs.mkdirSync(imgsPath + id);
+      }
+
       req.files.images.forEach((photo) => {
         let imgFilename = nanoid() + path.extname(photo.name);
-        photo.mv("./server/uploads/" + imgFilename);
+        photo.mv(imgsPath + id + "/" + imgFilename);
         data.push({
           name: imgFilename,
           mimetype: photo.mimetype,
           size: photo.size,
-          path: "./server/uploads/" + imgFilename,
+          path: imgsPath + id + "/" + imgFilename,
         });
       });
 
@@ -58,9 +67,11 @@ router.post("/", function (req, res, next) {
     console.log(err);
     res.status(500).send(err);
   }
+
   function runScript(content, styles) {
     // create array
-    let images = [content, styles[0]];
+    let images = [content, styles];
+    console.log(images);
     // style.forEach(images.push);
     spawn("python", [
       "../python/stylize.py",
@@ -77,7 +88,7 @@ router.post("/", function (req, res, next) {
     });
 
     stylePyScript.on("close", (code) => {
-      if (fs.existsSync("./server/result/" + progress.id + ".png")) {
+      if (fs.existsSync(imgsPath + progress.id)) {
         progress.status = SUCCESS;
       } else {
         progress.status = ERROR;
