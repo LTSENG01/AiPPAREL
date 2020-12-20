@@ -8,7 +8,10 @@ router.get("/", function (req, res, next) {
   let itemNum = req.query.itemNum;
 
   res.send(
-    getProduct(itemNum, `https://aipparel.online/result?hash=${hash}&num=3`)
+    getProduct(
+      itemNum,
+      `https://aipparel.online/result?hash=${hash}&num=3`.hash
+    )
   );
 });
 
