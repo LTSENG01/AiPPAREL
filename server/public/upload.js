@@ -9,6 +9,8 @@ function initialize() {
 
         formData.append("images", photos);
 
+        console.log(formData)
+
         fetch('/stylize', {
             method: 'POST',
             body: formData
