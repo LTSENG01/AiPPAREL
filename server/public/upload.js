@@ -35,7 +35,7 @@ function initialize() {
     // On submit
     submitButton.addEventListener("click", () => {
         const formData = new FormData();
-        const photos = document.querySelector('input[type="file"][multiple]');
+        const photos = document.querySelectorAll('input[type="file"]');
 
         for (let i = 0; i < photos.files.length; ++i) {
             formData.append('images', photos.files[i])
