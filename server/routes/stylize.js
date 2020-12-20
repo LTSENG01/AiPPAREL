@@ -56,14 +56,19 @@ router.post("/", function (req, res, next) {
         });
       });
 
-      writeProgress(progress);
-      // runScript(data[0].path, data[1].path);
-      res.send({
-        status: true,
-        message: "successful upload",
-        id: id,
-        data: data,
-      });
+            writeProgress(progress);
+            runScript(data[0].path, data[1].path);
+            res.send({
+                status: true,
+                message: "successful upload",
+                id: id,
+                data: data,
+            });
+        }
+    } catch (err) {
+        console.log(err);
+        res.status(500).send(err);
+
     }
   } catch (err) {
     console.log(err);
@@ -94,9 +99,29 @@ router.post("/", function (req, res, next) {
       }
     );
 
-    stylePyScript.stdout.on("data", (data) => {
-      console.log(data.toString());
-    });
+    function runScript(content, styles) {
+        // create array
+        const images = [content, styles];
+        // style.forEach(images.push);
+        const stylePyScript = spawn("python/venv/bin/python", [
+            "python/stylize.py",
+            "--checkpoint=python/magenta_folder/checkpoint/model.ckpt",
+            `--output_dir=server/images/${id}`,
+            `--style_images_paths=${images[0]}`,
+            `--content_images_paths=${images[1]}`,
+            "--image_size=512",
+            "--content_square_crop=False",
+            "--style_image_size=512",
+            "--style_square_crop=False",
+            "--interpolation_weights=[0.0,0.2,0.4,0.6,0.8,1.0]",
+            "--logtostdout"
+        ], {
+            cwd: "/srv/hackumass"
+        });
+
+        stylePyScript.stdout.on("data", data => {
+            console.log(data.toString());
+        });
 
     stylePyScript.stderr.on("data", (err) => {
       progress.status = ERROR;
