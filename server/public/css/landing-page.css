@@ -27,14 +27,14 @@ h2 {
 }
 
 a.btn {
-  color: #f3f3f3 !important;
+  color: #ffffff !important;
   background-color: #3C1874 !important;
 }
 
 header.masthead {
   height: 100vh;
   position: relative;
-  background-color: #f3f3f3;
+  background-color: #ffffff;
   background-size: cover;
   background-position: center;
 }
