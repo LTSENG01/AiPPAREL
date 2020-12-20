@@ -8,29 +8,26 @@ const download = (url, path, callback) => {
     request(url).pipe(fs.createWriteStream(path)).on("close", callback);
   });
 };
-
+let thash = "hello";
 /*
 @input id - id of product
 @return json of product or 1 if failed - should also catch errors
 */
 async function getProduct(id, image, hash) {
+  thash = hash;
+  let urls = [];
   await fetch("https://api.printful.com/products/" + id)
     .then((response) => response.json())
     .then((prod) => {
       console.log(prod);
-      let co = 0;
-      makeTask(id, image, prod).forEach((x) => {
-        download(
-          x,
-          "./server/images/" + hash + "/" + id + "_" + co + ".jpg",
-          () => 1
-        );
-      });
+
+      urls = makeTask(id, image, prod);
     })
     .catch((error) => {
       console.log("error" + error);
     });
-  return 1;
+  console.log(urls);
+  return urls;
 }
 
 /*
@@ -39,6 +36,7 @@ async function getProduct(id, image, hash) {
 @output returns task_id for printful or 1 if failed
 */
 async function makeTask(id, image, prod) {
+  let out;
   await fetch("https://api.printful.com/mockup-generator/create-task/" + id, {
     method: "POST",
     headers: {
@@ -49,20 +47,22 @@ async function makeTask(id, image, prod) {
   })
     .then((response) => response.json())
     .then((result) => {
-      console.log(result);
-      return getTask(result.result.task_key);
+      out = getTask(result.result.task_key, id);
+      console.log("ugh");
+      return out;
     })
     .catch((error) => {
       console.log("error" + error);
     });
-  return 1;
+  return out;
 }
 
 /*
 @input task_key - task key generated via makeTask, used to get the task results
 @output returns json object with lots of information returns 1 if error/timeout
 */
-async function getTask(task_key) {
+async function getTask(task_key, id) {
+  let mockups = [];
   let counter = 0;
   console.log(task_key);
   let loop = setInterval(async function () {
@@ -80,21 +80,20 @@ async function getTask(task_key) {
       .then((result) => {
         console.log(result.result.status + " timer:" + counter);
         if (result.result.status === "completed" || counter >= 90) {
-          clearInterval(loop);
-          console.log(result.result);
           let extras = result.result.mockups[0].extra;
-          console.log(extras);
-          let mockups = [
+          mockups = [
             result.result.mockups[0].mockup_url,
             extras[extras.length - 2].url,
             extras[extras.length - 1].url,
           ];
-          console.log(mockups);
+          saveImages(mockups, id);
+          clearInterval(loop);
           return mockups;
         }
         counter++;
       });
   }, 1000);
+  return mockups;
 }
 
 // constant which is just generic default settings
@@ -130,7 +129,6 @@ function generateBody(id, image, prod) {
     return { placement: file.id, image_url: image, position: default_position };
   });
   body["files"] = body["files"].filter((file) => file.placement != "preview");
-  console.log(body);
 
   return JSON.stringify(body);
 }
@@ -174,5 +172,18 @@ const products = [
   },
   { name: "test", id: "test1" },
 ];
+
+function saveImages(urls, id) {
+  let co = 0;
+  urls.forEach((x) => {
+    console.log(x);
+    download(
+      x,
+      "./server/images/" + thash + "/" + id + "_" + co + ".jpg",
+      () => 1
+    );
+    co++;
+  });
+}
 
 module.exports = { getProduct };

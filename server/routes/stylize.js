@@ -123,7 +123,8 @@ router.post("/", function (req, res, next) {
       itemnums.forEach((num) => {
         getProduct(
           num,
-          `https://aipparel.online/result?hash=${progress.id}&num=3`
+          `https://aipparel.online/result?hash=${progress.id}&num=3`,
+          progress.id
         );
       });
     });
