@@ -5,12 +5,9 @@ function initialize() {
     const submit_button = document.getElementById("submit_button");
     submit_button.addEventListener("click", () => {
         const formData = new FormData();
-        const photos = document.querySelector('input[type="file"][multiple]');
+        const photos = document.querySelector('input[type="file"][multiple]').files;
 
-        formData.append("images", "target_then_style");
-        for (let i = 0; i < photos.files.length; ++i) {
-            formData.append('images', photos.files[i])
-        }
+        formData.append("images", photos);
 
         fetch('/stylize', {
             method: 'POST',
