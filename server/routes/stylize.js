@@ -116,14 +116,12 @@ router.post("/", function (req, res, next) {
       }
       writeProgress(progress);
 
-      let reg = new RegExp(
-        "^[A-Za-z0-9_-]{21}_stylized_[A-Za-z0-9_-]{21}_3" + num + "{1}"
-      );
       let itemnums = [1, 257, 260];
       itemnums.forEach((num) => {
         getProduct(
           num,
-          `https://aipparel.online/result?hash=${progress.id}&num=3`
+          `https://aipparel.online/result?hash=${progress.id}&num=3`,
+          progress.id
         );
       });
     });
