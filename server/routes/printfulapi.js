@@ -19,7 +19,13 @@ async function getProduct(id, image, hash) {
     .then((prod) => {
       console.log(prod);
       let co = 0;
-      makeTask(id, image, prod);
+      makeTask(id, image, prod).forEach((x) => {
+        download(
+          x,
+          "./server/images/" + hash + "/" + id + "_" + co + ".jpg",
+          () => 1
+        );
+      });
     })
     .catch((error) => {
       console.log("error" + error);
