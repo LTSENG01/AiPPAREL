@@ -9,19 +9,19 @@ function init() {
     let net = [];
     let lines = two.makeGroup();
     let netGroup = makeNet(two, net);
-    lines.add(drawLines(net, "red", two));
-    lines.translation.set(two.width / 2 - 150, two.height / 2 - 100);
-    netGroup.translation.set(two.width / 2 - 150, two.height / 2 - 100);
+    lines.add(drawLines(net, two));
+    lines.translation.set(two.width / 2 - 150, two.height / 2 - 200);
+    netGroup.translation.set(two.width / 2 - 150, two.heightl / 2 - 200);
     two.update();
 
     two
         .bind('resize', function () {
-            lines.translation.set(two.width / 2 - 150, two.height / 2 - 100);
-            netGroup.translation.set(two.width / 2 - 150, two.height / 2 - 100);
+            lines.translation.set(two.width / 2 - 150, two.height / 2 - 200);
+            netGroup.translation.set(two.width / 2 - 150, two.height / 2 - 200);
         })
         .bind('update', function (frameCount) {
-            lines.translation.set(two.width / 2 - 150, two.height / 2 - 100);
-            netGroup.translation.set(two.width / 2 - 150, two.height / 2 - 100);
+            lines.translation.set(two.width / 2 - 150, two.height / 2 - 200);
+            netGroup.translation.set(two.width / 2 - 150, two.height / 2 - 200);
             if (frameCount % 50 === 0) {
                 let flip = Math.random();
                 if (flip > 0.5) {
@@ -83,7 +83,7 @@ function makeNet(two, net) {
 
 }
 
-function drawLines(network, color, two) {
+function drawLines(network, two) {
     let lines = two.makeGroup();
     for (let i = 0; i < network.length - 1; ++i) {
         for (let j = 0; j < network[i].length; ++j) {
