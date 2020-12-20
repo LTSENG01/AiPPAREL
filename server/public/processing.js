@@ -7,6 +7,7 @@ require('./printfulapi.js');
 
 
 /* products by id, in this order
+Poster
 Men's Crew Neck.
 Woman's V-Neck
 Unisex Sweatshirt
@@ -16,4 +17,4 @@ Unisex Hoodie
 Face Mask
 iPhone case
 */
-let products = [257,260,320,328,329,388,434,181]
+let products = [1,257,260,320,328,329,388,434,181]

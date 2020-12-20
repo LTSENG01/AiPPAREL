@@ -1,498 +1,538 @@
 [
     {
-    "id": 257,
-    "type": "CUT-SEW",
-    "type_name": "All-Over Print Men's Crew Neck T-Shirt",
-    "brand": null,
-    "model": "All-Over Print Men's Crew Neck T-Shirt",
-    "image": "https://files.cdn.printful.com/o/products/257/product_1597836031.jpg",
-    "variant_count": 6,
-    "currency": "USD",
-    "files": [
-      {
-        "id": "default",
-        "type": "default",
-        "title": "Print file",
-        "additional_price": null
-      },
-      {
-        "id": "back",
-        "type": "back",
-        "title": "Back print",
-        "additional_price": null
-      },
-      {
-        "id": "sleeve_left",
-        "type": "sleeve_left",
-        "title": "Left sleeve",
-        "additional_price": null
-      },
-      {
-        "id": "sleeve_right",
-        "type": "sleeve_right",
-        "title": "Right sleeve",
-        "additional_price": null
-      },
-      {
-        "id": "preview",
-        "type": "mockup",
-        "title": "Mockup",
-        "additional_price": null
-      }
-    ],
-    "options": [
-      {
-        "id": "stitch_color",
-        "title": "Stitch color",
-        "type": "radio",
-        "values": {
-          "white": "White",
-          "black": "Black"
+        "id": 1,
+        "type": "POSTER",
+        "type_name": "Enhanced Matte Paper Poster (in)",
+        "brand": null,
+        "model": "Enhanced Matte Paper Poster (in)",
+        "image": "https://files.cdn.printful.com/o/products/1/product_1552909388.jpg",
+        "variant_count": 11,
+        "currency": "USD",
+        "files": [
+            {
+                "id": "default",
+                "type": "default",
+                "title": "Print file",
+                "additional_price": null
+            },
+            {
+                "id": "preview",
+                "type": "mockup",
+                "title": "Mockup",
+                "additional_price": null
+            }
+        ],
+        "options": [],
+        "dimensions": {
+            "8×10": "8×10",
+            "10x10": "10x10",
+            "12×12": "12×12",
+            "12×16": "12×16",
+            "12×18": "12×18",
+            "14×14": "14×14",
+            "16×16": "16×16",
+            "16×20": "16×20",
+            "18×18": "18×18",
+            "18×24": "18×24",
+            "24×36": "24×36"
         },
-        "additional_price": null,
-        "additional_price_breakdown": []
-      },
-      {
-        "id": "notes",
-        "title": "Printing notes",
-        "type": "text",
-        "values": null,
-        "additional_price": null,
-        "additional_price_breakdown": []
-      }
-    ],
-    "dimensions": null,
-    "is_discontinued": false,
-    "avg_fulfillment_time": null,
-    "description": "Get to know your new favorite tee - it's super smooth, super comfortable, and made from a cotton touch polyester jersey that won't fade after washing. \r\n\r\n• 95% polyester, 5% elastane (fabric composition may vary by 1%)\r\n• Premium knit mid-weight jersey\r\n• Four-way stretch fabric that stretches and recovers on the cross and lengthwise grains\r\n• Regular fit\r\n• Model is 182cm/6 feet tall and wearing size M"
-  },
-
-  {
-    "id": 260,
-    "type": "CUT-SEW",
-    "type_name": "All-Over Print Women's V-Neck T-Shirt",
-    "brand": null,
-    "model": "All-Over Print Women's V-Neck T-Shirt",
-    "image": "https://files.cdn.printful.com/o/products/260/product_1562336454.jpg",
-    "variant_count": 6,
-    "currency": "USD",
-    "files": [
-      {
-        "id": "default",
-        "type": "default",
-        "title": "Print file",
-        "additional_price": null
-      },
-      {
-        "id": "back",
-        "type": "back",
-        "title": "Back print",
-        "additional_price": null
-      },
-      {
-        "id": "sleeve_left",
-        "type": "sleeve_left",
-        "title": "Left sleeve",
-        "additional_price": null
-      },
-      {
-        "id": "sleeve_right",
-        "type": "sleeve_right",
-        "title": "Right sleeve",
-        "additional_price": null
-      },
-      {
-        "id": "preview",
-        "type": "mockup",
-        "title": "Mockup",
-        "additional_price": null
-      }
-    ],
-    "options": [
-      {
-        "id": "stitch_color",
-        "title": "Stitch color",
-        "type": "radio",
-        "values": {
-          "white": "White",
-          "black": "Black"
-        },
-        "additional_price": null,
-        "additional_price_breakdown": []
-      },
-      {
-        "id": "notes",
-        "title": "Printing notes",
-        "type": "text",
-        "values": null,
-        "additional_price": null,
-        "additional_price_breakdown": []
-      }
-    ],
-    "dimensions": null,
-    "is_discontinued": false,
-    "avg_fulfillment_time": null,
-    "description": "Get to know your new favorite tee - it's super smooth, super comfortable, and made from a cotton touch polyester jersey that won't fade after washing. \r\n• 95% polyester, 5% elastane (fabric composition may vary by 1%)\r\n• Premium knit mid-weight jersey\r\n• Four-way stretch fabric that stretches and recovers on the cross and lengthwise grains\r\n• Regular fit\r\n• Model is 178 cm/5.8 feet tall and wearing size M"
-  },
-  {
-    "id": 320,
-    "type": "CUT-SEW",
-    "type_name": "All-Over Print Unisex Sweatshirt",
-    "brand": null,
-    "model": "All-Over Print Unisex Sweatshirt",
-    "image": "https://files.cdn.printful.com/o/products/320/product_1552298253.jpg",
-    "variant_count": 7,
-    "currency": "USD",
-    "files": [
-      {
-        "id": "default",
-        "type": "front",
-        "title": "Front print",
-        "additional_price": null
-      },
-      {
-        "id": "back",
-        "type": "back",
-        "title": "Back print",
-        "additional_price": null
-      },
-      {
-        "id": "sleeve_right",
-        "type": "sleeve_right",
-        "title": "Right sleeve",
-        "additional_price": null
-      },
-      {
-        "id": "sleeve_left",
-        "type": "sleeve_left",
-        "title": "Left sleeve",
-        "additional_price": null
-      },
-      {
-        "id": "label_inside",
-        "type": "label_inside",
-        "title": "Inside label",
-        "additional_price": null
-      },
-      {
-        "id": "preview",
-        "type": "mockup",
-        "title": "Mockup",
-        "additional_price": null
-      }
-    ],
-    "options": [
-      {
-        "id": "stitch_color",
-        "title": "Stitch color",
-        "type": "radio",
-        "values": {
-          "white": "White",
-          "black": "Black"
-        },
-        "additional_price": null,
-        "additional_price_breakdown": []
-      },
-      {
-        "id": "notes",
-        "title": "Printing notes",
-        "type": "text",
-        "values": null,
-        "additional_price": null,
-        "additional_price_breakdown": []
-      }
-    ],
-    "dimensions": null,
-    "is_discontinued": false,
-    "avg_fulfillment_time": null,
-    "description": "Each unique, all-over printed sweatshirt is precision-cut and hand-sewn to achieve the best possible look and bring out the intricate design. What's more, the durable fabric with a cotton-feel face and soft brushed fleece inside means that this sweatshirt is bound to become your favorite for a long time.\r\n\r\n• 70% polyester, 27% cotton, 3% elastane\r\n• Soft cotton-feel face\r\n• Brushed fleece fabric inside\r\n• Unisex style\r\n• Overlock seams\r\n"
-  },
-  {
-    "id": 328,
-    "type": "CUT-SEW",
-    "type_name": "All-Over Print Men's Athletic T-Shirt",
-    "brand": null,
-    "model": "All-Over Print Men's Athletic T-Shirt",
-    "image": "https://files.cdn.printful.com/o/products/328/product_1573221860.jpg",
-    "variant_count": 7,
-    "currency": "USD",
-    "files": [
-      {
-        "id": "default",
-        "type": "front",
-        "title": "Front print",
-        "additional_price": null
-      },
-      {
-        "id": "back",
-        "type": "back",
-        "title": "Back print",
-        "additional_price": null
-      },
-      {
-        "id": "sleeve_right",
-        "type": "sleeve_right",
-        "title": "Right sleeve",
-        "additional_price": null
-      },
-      {
-        "id": "sleeve_left",
-        "type": "sleeve_left",
-        "title": "Left sleeve",
-        "additional_price": null
-      },
-      {
-        "id": "preview",
-        "type": "mockup",
-        "title": "Mockup",
-        "additional_price": null
-      }
-    ],
-    "options": [
-      {
-        "id": "stitch_color",
-        "title": "Stitch color",
-        "type": "radio",
-        "values": {
-          "white": "White",
-          "black": "Black"
-        },
-        "additional_price": null,
-        "additional_price_breakdown": []
-      },
-      {
-        "id": "notes",
-        "title": "Printing notes",
-        "type": "text",
-        "values": null,
-        "additional_price": null,
-        "additional_price_breakdown": []
-      }
-    ],
-    "dimensions": null,
-    "is_discontinued": false,
-    "avg_fulfillment_time": null,
-    "description": "A t-shirt perfect for all kinds of workouts. Its moisture management and anti-microbial qualities are sure to keep athletes dry and comfortable even during the most vigorous of workouts.\r\n\r\n• 92% polyester, 8% spandex\r\n• Fabric weight: 4.42 oz/yd² (150 g/m²)\r\n• MaxDri moisture management & MicroBlok anti-microbial fabric\r\n• Very soft four-way stretch sports mesh fabric \r\n• Comfortable fit\r\n• Overlock and coverstitch\r\n"
-  },
-  {
-    "id": 329,
-    "type": "CUT-SEW",
-    "type_name": "All-Over Print Women's Athletic T-Shirt",
-    "brand": null,
-    "model": "All-Over Print Women's Athletic T-Shirt",
-    "image": "https://files.cdn.printful.com/o/products/329/product_1550675655.jpg",
-    "variant_count": 7,
-    "currency": "USD",
-    "files": [
-      {
-        "id": "default",
-        "type": "front",
-        "title": "Front print",
-        "additional_price": null
-      },
-      {
-        "id": "back",
-        "type": "back",
-        "title": "Back print",
-        "additional_price": null
-      },
-      {
-        "id": "sleeve_right",
-        "type": "sleeve_right",
-        "title": "Right sleeve",
-        "additional_price": null
-      },
-      {
-        "id": "sleeve_left",
-        "type": "sleeve_left",
-        "title": "Left sleeve",
-        "additional_price": null
-      },
-      {
-        "id": "preview",
-        "type": "mockup",
-        "title": "Mockup",
-        "additional_price": null
-      }
-    ],
-    "options": [
-      {
-        "id": "stitch_color",
-        "title": "Stitch color",
-        "type": "radio",
-        "values": {
-          "white": "White",
-          "black": "Black"
-        },
-        "additional_price": null,
-        "additional_price_breakdown": []
-      },
-      {
-        "id": "notes",
-        "title": "Printing notes",
-        "type": "text",
-        "values": null,
-        "additional_price": null,
-        "additional_price_breakdown": []
-      }
-    ],
-    "dimensions": null,
-    "is_discontinued": false,
-    "avg_fulfillment_time": null,
-    "description": "This t-shirt easily combines comfort and style - the sports mesh fabric with moisture management and anti-microbial qualities is sure to keep any athlete dry and comfortable during exercise, while the design will make it into a unique statement piece.\r\n\r\n• 92% polyester, 8% spandex\r\n• Fabric weight: 4.42 oz/yd² (150 g/m²)\r\n• MaxDri moisture management & MicroBlok anti-microbial fabric\r\n• Very soft four-way stretch sports mesh fabric \r\n• Comfortable fit\r\n• Overlock and coverstitch\r\n"
-  },
-  {
-    "id": 388,
-    "type": "CUT-SEW",
-    "type_name": "All-Over Print Unisex Hoodie",
-    "brand": null,
-    "model": "All-Over Print Unisex Hoodie",
-    "image": "https://files.cdn.printful.com/o/products/388/product_1567631474.jpg",
-    "variant_count": 7,
-    "currency": "USD",
-    "files": [
-      {
-        "id": "default",
-        "type": "front",
-        "title": "Front print",
-        "additional_price": null
-      },
-      {
-        "id": "back",
-        "type": "back",
-        "title": "Back print",
-        "additional_price": null
-      },
-      {
-        "id": "sleeve_right",
-        "type": "sleeve_right",
-        "title": "Right sleeve",
-        "additional_price": null
-      },
-      {
-        "id": "sleeve_left",
-        "type": "sleeve_left",
-        "title": "Left sleeve",
-        "additional_price": null
-      },
-      {
-        "id": "pocket",
-        "type": "pocket",
-        "title": "Pocket",
-        "additional_price": null
-      },
-      {
-        "id": "hood",
-        "type": "hood",
-        "title": "Hood",
-        "additional_price": null
-      },
-      {
-        "id": "label_inside",
-        "type": "label_inside",
-        "title": "Inside label",
-        "additional_price": null
-      },
-      {
-        "id": "preview",
-        "type": "mockup",
-        "title": "Mockup",
-        "additional_price": null
-      }
-    ],
-    "options": [
-      {
-        "id": "stitch_color",
-        "title": "Drawcord & Stitch color",
-        "type": "radio",
-        "values": {
-          "white": "White",
-          "black": "Black"
-        },
-        "additional_price": null,
-        "additional_price_breakdown": []
-      },
-      {
-        "id": "notes",
-        "title": "Printing notes",
-        "type": "text",
-        "values": null,
-        "additional_price": null,
-        "additional_price_breakdown": []
-      }
-    ],
-    "dimensions": null,
-    "is_discontinued": false,
-    "avg_fulfillment_time": null,
-    "description": "This comfy unisex hoodie has a soft outside with a vibrant print, and an even softer brushed fleece inside. The hoodie has a relaxed fit, and it's perfect for wrapping yourself into on a chilly evening.\r\n\r\n• 70% polyester, 27% cotton, 3% elastane\r\n• Fabric weight: 8.85 oz/yd² (300 g/m²)\r\n• Soft cotton-feel fabric face\r\n• Brushed fleece fabric inside\r\n• Double-lined hood with design on both sides\r\n• Unisex style\r\n• Overlock seams\r\n• Comes with drawstrings"
-  },
-  {
-    "id": 434,
-    "type": "CUT-SEW",
-    "type_name": "All-Over Print Face Mask",
-    "brand": null,
-    "model": "All-Over Print Face Mask",
-    "image": "https://files.cdn.printful.com/o/products/434/product_1594993991.jpg",
-    "variant_count": 2,
-    "currency": "USD",
-    "files": [
-      {
-        "id": "default",
-        "type": "front",
-        "title": "Front print",
-        "additional_price": null
-      },
-      {
-        "id": "preview",
-        "type": "mockup",
-        "title": "Mockup",
-        "additional_price": null
-      }
-    ],
-    "options": [
-      {
-        "id": "notes",
-        "title": "Printing notes",
-        "type": "text",
-        "values": null,
-        "additional_price": null,
-        "additional_price_breakdown": []
-      }
-    ],
-    "dimensions": null,
-    "is_discontinued": false,
-    "avg_fulfillment_time": null,
-    "description": "This reusable face mask will fit you nicely thanks to its adjustable nose wire and elastic bands. Choose a design that will complement your style, as face masks are becoming the new trend. \r\n\r\n • 100% supersoft polyester microfiber \r\n • Fabric weight: 2.4–2.5 oz/yd² (80-85 g/m²)\r\n • Nose wire that helps adjust the mask\r\n • Elastic bands with PVC earloop size regulators\r\n • Pocket for a filter or napkin\r\n • Washable and reusable"
-  },
-  {
-    "id": 181,
-    "type": "PHONE-CASE",
-    "type_name": "iPhone Case",
-    "brand": null,
-    "model": "iPhone Case",
-    "image": "https://files.cdn.printful.com/o/products/181/product_1570615955.jpg",
-    "variant_count": 13,
-    "currency": "USD",
-    "files": [
-      {
-        "id": "default",
-        "type": "default",
-        "title": "Print file",
-        "additional_price": null
-      },
-      {
-        "id": "preview",
-        "type": "mockup",
-        "title": "Mockup",
-        "additional_price": null
-      }
-    ],
-    "options": [],
-    "dimensions": {
-      "default": "2.93x6.1"
+        "is_discontinued": false,
+        "avg_fulfillment_time": null,
+        "description": "Museum-quality posters made on thick and durable matte paper. Add a wonderful accent to your room and office with these posters that are sure to brighten any environment.\r\n\r\n• Paper thickness: 10.3 mil\r\n• Paper weight: 5.57 oz/y² (189 g/m²)\r\n• Giclée printing quality\r\n• Opacity: 94%"
     },
-    "is_discontinued": false,
-    "avg_fulfillment_time": null,
-    "description": "This sleek iPhone case protects your phone from scratches, dust, oil, and dirt. It has a solid back and flexible sides that make it easy to take on and off, with precisely aligned port openings. \r\n\r\n• BPA free Hybrid Thermoplastic Polyurethane (TPU) and Polycarbonate (PC) material\r\n• Solid polycarbonate back\r\n• Flexible, see-through polyurethane sides\r\n• .5 mm raised bezel\r\n• Wireless charging compatible\r\n• The SE case fits the 2020 iPhone SE model\r\n"
-  }
+    {
+        "id": 257,
+        "type": "CUT-SEW",
+        "type_name": "All-Over Print Men's Crew Neck T-Shirt",
+        "brand": null,
+        "model": "All-Over Print Men's Crew Neck T-Shirt",
+        "image": "https://files.cdn.printful.com/o/products/257/product_1597836031.jpg",
+        "variant_count": 6,
+        "currency": "USD",
+        "files": [
+            {
+                "id": "default",
+                "type": "default",
+                "title": "Print file",
+                "additional_price": null
+            },
+            {
+                "id": "back",
+                "type": "back",
+                "title": "Back print",
+                "additional_price": null
+            },
+            {
+                "id": "sleeve_left",
+                "type": "sleeve_left",
+                "title": "Left sleeve",
+                "additional_price": null
+            },
+            {
+                "id": "sleeve_right",
+                "type": "sleeve_right",
+                "title": "Right sleeve",
+                "additional_price": null
+            },
+            {
+                "id": "preview",
+                "type": "mockup",
+                "title": "Mockup",
+                "additional_price": null
+            }
+        ],
+        "options": [
+            {
+                "id": "stitch_color",
+                "title": "Stitch color",
+                "type": "radio",
+                "values": {
+                    "white": "White",
+                    "black": "Black"
+                },
+                "additional_price": null,
+                "additional_price_breakdown": []
+            },
+            {
+                "id": "notes",
+                "title": "Printing notes",
+                "type": "text",
+                "values": null,
+                "additional_price": null,
+                "additional_price_breakdown": []
+            }
+        ],
+        "dimensions": null,
+        "is_discontinued": false,
+        "avg_fulfillment_time": null,
+        "description": "Get to know your new favorite tee - it's super smooth, super comfortable, and made from a cotton touch polyester jersey that won't fade after washing. \r\n\r\n• 95% polyester, 5% elastane (fabric composition may vary by 1%)\r\n• Premium knit mid-weight jersey\r\n• Four-way stretch fabric that stretches and recovers on the cross and lengthwise grains\r\n• Regular fit\r\n• Model is 182cm/6 feet tall and wearing size M"
+    },
+    {
+        "id": 260,
+        "type": "CUT-SEW",
+        "type_name": "All-Over Print Women's V-Neck T-Shirt",
+        "brand": null,
+        "model": "All-Over Print Women's V-Neck T-Shirt",
+        "image": "https://files.cdn.printful.com/o/products/260/product_1562336454.jpg",
+        "variant_count": 6,
+        "currency": "USD",
+        "files": [
+            {
+                "id": "default",
+                "type": "default",
+                "title": "Print file",
+                "additional_price": null
+            },
+            {
+                "id": "back",
+                "type": "back",
+                "title": "Back print",
+                "additional_price": null
+            },
+            {
+                "id": "sleeve_left",
+                "type": "sleeve_left",
+                "title": "Left sleeve",
+                "additional_price": null
+            },
+            {
+                "id": "sleeve_right",
+                "type": "sleeve_right",
+                "title": "Right sleeve",
+                "additional_price": null
+            },
+            {
+                "id": "preview",
+                "type": "mockup",
+                "title": "Mockup",
+                "additional_price": null
+            }
+        ],
+        "options": [
+            {
+                "id": "stitch_color",
+                "title": "Stitch color",
+                "type": "radio",
+                "values": {
+                    "white": "White",
+                    "black": "Black"
+                },
+                "additional_price": null,
+                "additional_price_breakdown": []
+            },
+            {
+                "id": "notes",
+                "title": "Printing notes",
+                "type": "text",
+                "values": null,
+                "additional_price": null,
+                "additional_price_breakdown": []
+            }
+        ],
+        "dimensions": null,
+        "is_discontinued": false,
+        "avg_fulfillment_time": null,
+        "description": "Get to know your new favorite tee - it's super smooth, super comfortable, and made from a cotton touch polyester jersey that won't fade after washing. \r\n• 95% polyester, 5% elastane (fabric composition may vary by 1%)\r\n• Premium knit mid-weight jersey\r\n• Four-way stretch fabric that stretches and recovers on the cross and lengthwise grains\r\n• Regular fit\r\n• Model is 178 cm/5.8 feet tall and wearing size M"
+    },
+    {
+        "id": 320,
+        "type": "CUT-SEW",
+        "type_name": "All-Over Print Unisex Sweatshirt",
+        "brand": null,
+        "model": "All-Over Print Unisex Sweatshirt",
+        "image": "https://files.cdn.printful.com/o/products/320/product_1552298253.jpg",
+        "variant_count": 7,
+        "currency": "USD",
+        "files": [
+            {
+                "id": "default",
+                "type": "front",
+                "title": "Front print",
+                "additional_price": null
+            },
+            {
+                "id": "back",
+                "type": "back",
+                "title": "Back print",
+                "additional_price": null
+            },
+            {
+                "id": "sleeve_right",
+                "type": "sleeve_right",
+                "title": "Right sleeve",
+                "additional_price": null
+            },
+            {
+                "id": "sleeve_left",
+                "type": "sleeve_left",
+                "title": "Left sleeve",
+                "additional_price": null
+            },
+            {
+                "id": "label_inside",
+                "type": "label_inside",
+                "title": "Inside label",
+                "additional_price": null
+            },
+            {
+                "id": "preview",
+                "type": "mockup",
+                "title": "Mockup",
+                "additional_price": null
+            }
+        ],
+        "options": [
+            {
+                "id": "stitch_color",
+                "title": "Stitch color",
+                "type": "radio",
+                "values": {
+                    "white": "White",
+                    "black": "Black"
+                },
+                "additional_price": null,
+                "additional_price_breakdown": []
+            },
+            {
+                "id": "notes",
+                "title": "Printing notes",
+                "type": "text",
+                "values": null,
+                "additional_price": null,
+                "additional_price_breakdown": []
+            }
+        ],
+        "dimensions": null,
+        "is_discontinued": false,
+        "avg_fulfillment_time": null,
+        "description": "Each unique, all-over printed sweatshirt is precision-cut and hand-sewn to achieve the best possible look and bring out the intricate design. What's more, the durable fabric with a cotton-feel face and soft brushed fleece inside means that this sweatshirt is bound to become your favorite for a long time.\r\n\r\n• 70% polyester, 27% cotton, 3% elastane\r\n• Soft cotton-feel face\r\n• Brushed fleece fabric inside\r\n• Unisex style\r\n• Overlock seams\r\n"
+    },
+    {
+        "id": 328,
+        "type": "CUT-SEW",
+        "type_name": "All-Over Print Men's Athletic T-Shirt",
+        "brand": null,
+        "model": "All-Over Print Men's Athletic T-Shirt",
+        "image": "https://files.cdn.printful.com/o/products/328/product_1573221860.jpg",
+        "variant_count": 7,
+        "currency": "USD",
+        "files": [
+            {
+                "id": "default",
+                "type": "front",
+                "title": "Front print",
+                "additional_price": null
+            },
+            {
+                "id": "back",
+                "type": "back",
+                "title": "Back print",
+                "additional_price": null
+            },
+            {
+                "id": "sleeve_right",
+                "type": "sleeve_right",
+                "title": "Right sleeve",
+                "additional_price": null
+            },
+            {
+                "id": "sleeve_left",
+                "type": "sleeve_left",
+                "title": "Left sleeve",
+                "additional_price": null
+            },
+            {
+                "id": "preview",
+                "type": "mockup",
+                "title": "Mockup",
+                "additional_price": null
+            }
+        ],
+        "options": [
+            {
+                "id": "stitch_color",
+                "title": "Stitch color",
+                "type": "radio",
+                "values": {
+                    "white": "White",
+                    "black": "Black"
+                },
+                "additional_price": null,
+                "additional_price_breakdown": []
+            },
+            {
+                "id": "notes",
+                "title": "Printing notes",
+                "type": "text",
+                "values": null,
+                "additional_price": null,
+                "additional_price_breakdown": []
+            }
+        ],
+        "dimensions": null,
+        "is_discontinued": false,
+        "avg_fulfillment_time": null,
+        "description": "A t-shirt perfect for all kinds of workouts. Its moisture management and anti-microbial qualities are sure to keep athletes dry and comfortable even during the most vigorous of workouts.\r\n\r\n• 92% polyester, 8% spandex\r\n• Fabric weight: 4.42 oz/yd² (150 g/m²)\r\n• MaxDri moisture management & MicroBlok anti-microbial fabric\r\n• Very soft four-way stretch sports mesh fabric \r\n• Comfortable fit\r\n• Overlock and coverstitch\r\n"
+    },
+    {
+        "id": 329,
+        "type": "CUT-SEW",
+        "type_name": "All-Over Print Women's Athletic T-Shirt",
+        "brand": null,
+        "model": "All-Over Print Women's Athletic T-Shirt",
+        "image": "https://files.cdn.printful.com/o/products/329/product_1550675655.jpg",
+        "variant_count": 7,
+        "currency": "USD",
+        "files": [
+            {
+                "id": "default",
+                "type": "front",
+                "title": "Front print",
+                "additional_price": null
+            },
+            {
+                "id": "back",
+                "type": "back",
+                "title": "Back print",
+                "additional_price": null
+            },
+            {
+                "id": "sleeve_right",
+                "type": "sleeve_right",
+                "title": "Right sleeve",
+                "additional_price": null
+            },
+            {
+                "id": "sleeve_left",
+                "type": "sleeve_left",
+                "title": "Left sleeve",
+                "additional_price": null
+            },
+            {
+                "id": "preview",
+                "type": "mockup",
+                "title": "Mockup",
+                "additional_price": null
+            }
+        ],
+        "options": [
+            {
+                "id": "stitch_color",
+                "title": "Stitch color",
+                "type": "radio",
+                "values": {
+                    "white": "White",
+                    "black": "Black"
+                },
+                "additional_price": null,
+                "additional_price_breakdown": []
+            },
+            {
+                "id": "notes",
+                "title": "Printing notes",
+                "type": "text",
+                "values": null,
+                "additional_price": null,
+                "additional_price_breakdown": []
+            }
+        ],
+        "dimensions": null,
+        "is_discontinued": false,
+        "avg_fulfillment_time": null,
+        "description": "This t-shirt easily combines comfort and style - the sports mesh fabric with moisture management and anti-microbial qualities is sure to keep any athlete dry and comfortable during exercise, while the design will make it into a unique statement piece.\r\n\r\n• 92% polyester, 8% spandex\r\n• Fabric weight: 4.42 oz/yd² (150 g/m²)\r\n• MaxDri moisture management & MicroBlok anti-microbial fabric\r\n• Very soft four-way stretch sports mesh fabric \r\n• Comfortable fit\r\n• Overlock and coverstitch\r\n"
+    },
+    {
+        "id": 388,
+        "type": "CUT-SEW",
+        "type_name": "All-Over Print Unisex Hoodie",
+        "brand": null,
+        "model": "All-Over Print Unisex Hoodie",
+        "image": "https://files.cdn.printful.com/o/products/388/product_1567631474.jpg",
+        "variant_count": 7,
+        "currency": "USD",
+        "files": [
+            {
+                "id": "default",
+                "type": "front",
+                "title": "Front print",
+                "additional_price": null
+            },
+            {
+                "id": "back",
+                "type": "back",
+                "title": "Back print",
+                "additional_price": null
+            },
+            {
+                "id": "sleeve_right",
+                "type": "sleeve_right",
+                "title": "Right sleeve",
+                "additional_price": null
+            },
+            {
+                "id": "sleeve_left",
+                "type": "sleeve_left",
+                "title": "Left sleeve",
+                "additional_price": null
+            },
+            {
+                "id": "pocket",
+                "type": "pocket",
+                "title": "Pocket",
+                "additional_price": null
+            },
+            {
+                "id": "hood",
+                "type": "hood",
+                "title": "Hood",
+                "additional_price": null
+            },
+            {
+                "id": "label_inside",
+                "type": "label_inside",
+                "title": "Inside label",
+                "additional_price": null
+            },
+            {
+                "id": "preview",
+                "type": "mockup",
+                "title": "Mockup",
+                "additional_price": null
+            }
+        ],
+        "options": [
+            {
+                "id": "stitch_color",
+                "title": "Drawcord & Stitch color",
+                "type": "radio",
+                "values": {
+                    "white": "White",
+                    "black": "Black"
+                },
+                "additional_price": null,
+                "additional_price_breakdown": []
+            },
+            {
+                "id": "notes",
+                "title": "Printing notes",
+                "type": "text",
+                "values": null,
+                "additional_price": null,
+                "additional_price_breakdown": []
+            }
+        ],
+        "dimensions": null,
+        "is_discontinued": false,
+        "avg_fulfillment_time": null,
+        "description": "This comfy unisex hoodie has a soft outside with a vibrant print, and an even softer brushed fleece inside. The hoodie has a relaxed fit, and it's perfect for wrapping yourself into on a chilly evening.\r\n\r\n• 70% polyester, 27% cotton, 3% elastane\r\n• Fabric weight: 8.85 oz/yd² (300 g/m²)\r\n• Soft cotton-feel fabric face\r\n• Brushed fleece fabric inside\r\n• Double-lined hood with design on both sides\r\n• Unisex style\r\n• Overlock seams\r\n• Comes with drawstrings"
+    },
+    {
+        "id": 434,
+        "type": "CUT-SEW",
+        "type_name": "All-Over Print Face Mask",
+        "brand": null,
+        "model": "All-Over Print Face Mask",
+        "image": "https://files.cdn.printful.com/o/products/434/product_1594993991.jpg",
+        "variant_count": 2,
+        "currency": "USD",
+        "files": [
+            {
+                "id": "default",
+                "type": "front",
+                "title": "Front print",
+                "additional_price": null
+            },
+            {
+                "id": "preview",
+                "type": "mockup",
+                "title": "Mockup",
+                "additional_price": null
+            }
+        ],
+        "options": [
+            {
+                "id": "notes",
+                "title": "Printing notes",
+                "type": "text",
+                "values": null,
+                "additional_price": null,
+                "additional_price_breakdown": []
+            }
+        ],
+        "dimensions": null,
+        "is_discontinued": false,
+        "avg_fulfillment_time": null,
+        "description": "This reusable face mask will fit you nicely thanks to its adjustable nose wire and elastic bands. Choose a design that will complement your style, as face masks are becoming the new trend. \r\n\r\n • 100% supersoft polyester microfiber \r\n • Fabric weight: 2.4–2.5 oz/yd² (80-85 g/m²)\r\n • Nose wire that helps adjust the mask\r\n • Elastic bands with PVC earloop size regulators\r\n • Pocket for a filter or napkin\r\n • Washable and reusable"
+    },
+    {
+        "id": 181,
+        "type": "PHONE-CASE",
+        "type_name": "iPhone Case",
+        "brand": null,
+        "model": "iPhone Case",
+        "image": "https://files.cdn.printful.com/o/products/181/product_1570615955.jpg",
+        "variant_count": 13,
+        "currency": "USD",
+        "files": [
+            {
+                "id": "default",
+                "type": "default",
+                "title": "Print file",
+                "additional_price": null
+            },
+            {
+                "id": "preview",
+                "type": "mockup",
+                "title": "Mockup",
+                "additional_price": null
+            }
+        ],
+        "options": [],
+        "dimensions": {
+            "default": "2.93x6.1"
+        },
+        "is_discontinued": false,
+        "avg_fulfillment_time": null,
+        "description": "This sleek iPhone case protects your phone from scratches, dust, oil, and dirt. It has a solid back and flexible sides that make it easy to take on and off, with precisely aligned port openings. \r\n\r\n• BPA free Hybrid Thermoplastic Polyurethane (TPU) and Polycarbonate (PC) material\r\n• Solid polycarbonate back\r\n• Flexible, see-through polyurethane sides\r\n• .5 mm raised bezel\r\n• Wireless charging compatible\r\n• The SE case fits the 2020 iPhone SE model\r\n"
+    }
 ]
