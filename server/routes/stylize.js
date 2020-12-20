@@ -28,7 +28,6 @@ router.post("/", function (req, res, next) {
     try {
         // if no files attached, return error/failed
         if (!req.files) {
-            console.log(files);
             res.send({
                 status: false,
                 message: "no images included",
