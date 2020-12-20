@@ -55,7 +55,7 @@ router.post("/", function (req, res, next) {
             });
 
             writeProgress(progress);
-            // runScript(data[0].path, data[1].path);
+            runScript(data[0].path, data[1].path);
             res.send({
                 status: true,
                 message: "successful upload",
