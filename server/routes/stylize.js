@@ -107,9 +107,8 @@ router.post("/", function (req, res, next) {
     stylePyScript.on("close", (code) => {
       const files = fs.readdirSync(imgsPath + progress.id);
       let completed = files.some((file) =>
-        /^[A-Za-z0-9_-]{21}_stylized_[A-Za-z0-9_-]{21}_[0-9]{1}/.match(file)
+        file.match(/^[A-Za-z0-9_-]{21}_stylized_[A-Za-z0-9_-]{21}_[0-9]/)
       );
-      console.log(completed);
       if (completed) {
         progress.status = SUCCESS;
       } else {
