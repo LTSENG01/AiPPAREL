@@ -1,8 +1,12 @@
 
+let hash = getCookie("hash")
+
 // This handler runs every seconds
 setInterval(async () => {
     // Check if the internal processing is complete
-    let hash = getCookie("hash")
+    if (hash === undefined || hash === "") {
+        alert("There was an error getting the hash!")
+    }
     await fetch(`/design/${hash}`)
         .then(response => {
             console.log(response.text())
