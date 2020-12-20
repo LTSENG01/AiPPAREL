@@ -1,8 +1,65 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  overflow-x: hidden !important;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  background-image: url("../img/upload_background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #cccccc;
+  background-blend-mode: overlay;
 }
 
-a {
-  color: #00B7FF;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  color: #3C1874;
+  font-weight: 700;
+}
+
+h2 {
+  color: #283747;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+  max-width: 400px;
+}
+
+.pre-upload {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+}
+
+.col-sm-6 {
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    margin-top: 8rem;
+  }
+}
+
+.container {
+  text-align: center;
+}
+
+.section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+#submit-button {
+  background-color: #932432;
+  color: #fff;
 }

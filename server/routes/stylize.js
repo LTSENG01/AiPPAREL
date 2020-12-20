@@ -99,9 +99,7 @@ router.post("/", function (req, res, next) {
     });
 
     stylePyScript.stderr.on("data", (err) => {
-      progress.status = ERROR;
-      progress["message"] = "Failed to load image";
-      console.log(err.toString());
+      console.error(err.toString());
     });
 
     stylePyScript.on("close", (code) => {
