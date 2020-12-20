@@ -8,8 +8,10 @@ const indexRouter = require("./routes/index");
 const stylizeRouter = require("./routes/stylize");
 const designRouter = require("./routes/design");
 const retrieveImageRouter = require("./routes/retrieveImage");
+
 const shopRouter = require("./routes/shop");
 
+const printfulRouter = require("./routes/printful");
 const app = express();
 
 app.use(
@@ -23,6 +25,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
+app.use("/printful", printfulRouter);
 app.use("/", indexRouter);
 app.use("/stylize", stylizeRouter);
 app.use("/design/:hash", designRouter);
