@@ -5,6 +5,7 @@
  */
 
 body {
+  overflow-x: hidden !important;
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -27,14 +28,14 @@ h2 {
 }
 
 a.btn {
-  color: #f3f3f3 !important;
+  color: #ffffff !important;
   background-color: #3C1874 !important;
 }
 
 header.masthead {
   height: 100vh;
   position: relative;
-  background-color: #f3f3f3;
+  background-color: #ffffff;
   background-size: cover;
   background-position: center;
 }
@@ -56,6 +57,7 @@ header.masthead h1 {
     font-size: 3rem;
   }
 }
+
 
 .showcase .showcase-text {
   padding: 3rem;
@@ -129,6 +131,10 @@ header.masthead h1 {
 footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.fab {
+  color: #932432 !important;
 }
 
 #particles-js {
