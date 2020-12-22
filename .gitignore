@@ -3,9 +3,8 @@
 node_modules/
 */uploads/*
 */status/*
-*/results/*
 */venv/
-server/result/1lEgAloXfI-ZR9HHcH8i9.jpg
 */images/*
 .vscode/settings.json
 */config.json
+*/output_images/

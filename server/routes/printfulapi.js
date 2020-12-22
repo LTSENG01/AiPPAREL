@@ -175,9 +175,12 @@ function saveImages(urls, id) {
   let co = 0;
   urls.forEach((x) => {
     console.log(x);
+    if (!fs.existsSync("./server/public/output_images/" + thash + "/")) {
+	fs.mkdirSync("./server/public/output_images/" + thash + "/");
+    }
     download(
       x,
-      "./server/images/" + thash + "/" + id + "_" + co + ".jpg",
+      "./server/public/output_images/" + thash + "/" + id + "_" + co + ".jpg",
       () => 1
     );
     co++;
