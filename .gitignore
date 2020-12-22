@@ -4,7 +4,7 @@ node_modules/
 */uploads/*
 */status/*
 */venv/
-*/images/*
+*/images/
 .vscode/settings.json
 */config.json
-*/output_images/
+server/public/output_images/
